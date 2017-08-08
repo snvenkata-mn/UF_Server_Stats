@@ -1,0 +1,38 @@
+current directory: /home/snvenkata/rails_app/app/vendor/bundle/gems/puma-3.9.1/ext/puma_http11
+/usr/local/bin/ruby -r ./siteconf20170730-17741-1w71f1u.rb extconf.rb
+checking for BIO_read() in -lcrypto... yes
+checking for SSL_CTX_new() in -lssl... yes
+checking for openssl/bio.h... yes
+creating Makefile
+
+current directory: /home/snvenkata/rails_app/app/vendor/bundle/gems/puma-3.9.1/ext/puma_http11
+make "DESTDIR=" clean
+
+current directory: /home/snvenkata/rails_app/app/vendor/bundle/gems/puma-3.9.1/ext/puma_http11
+make "DESTDIR="
+compiling http11_parser.c
+ext/puma_http11/http11_parser.rl: In function ‘puma_parser_execute’:
+ext/puma_http11/http11_parser.rl:111: warning: comparison between signed and unsigned integer expressions
+At top level:
+cc1: warning: unrecognized command line option "-Wno-self-assign"
+cc1: warning: unrecognized command line option "-Wno-constant-logical-operand"
+cc1: warning: unrecognized command line option "-Wno-parentheses-equality"
+cc1: warning: unrecognized command line option "-Wno-tautological-compare"
+compiling io_buffer.c
+compiling mini_ssl.c
+mini_ssl.c: In function ‘engine_init_server’:
+mini_ssl.c:153: warning: ISO C90 forbids mixed declarations and code
+mini_ssl.c:158: warning: ISO C90 forbids mixed declarations and code
+mini_ssl.c:180: warning: ISO C90 forbids mixed declarations and code
+mini_ssl.c:184: warning: ISO C90 forbids mixed declarations and code
+At top level:
+cc1: warning: unrecognized command line option "-Wno-self-assign"
+cc1: warning: unrecognized command line option "-Wno-constant-logical-operand"
+cc1: warning: unrecognized command line option "-Wno-parentheses-equality"
+cc1: warning: unrecognized command line option "-Wno-tautological-compare"
+compiling puma_http11.c
+linking shared-object puma/puma_http11.so
+
+current directory: /home/snvenkata/rails_app/app/vendor/bundle/gems/puma-3.9.1/ext/puma_http11
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 puma_http11.so ./.gem.20170730-17741-1vu7r1w/puma

@@ -1,0 +1,497 @@
+"gcc -o conftest -I/usr/local/include/ruby-2.4.0/x86_64-linux -I/usr/local/include/ruby-2.4.0/ruby/backward -I/usr/local/include/ruby-2.4.0 -I.    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat conftest.c  -L. -L/usr/local/lib -Wl,-R/usr/local/lib -L. -fstack-protector -rdynamic -Wl,-export-dynamic     -Wl,-R/usr/local/lib -L/usr/local/lib -lruby-static  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return 0;
+6: }
+/* end */
+
+"gcc -o conftest -I/usr/local/include/ruby-2.4.0/x86_64-linux -I/usr/local/include/ruby-2.4.0/ruby/backward -I/usr/local/include/ruby-2.4.0 -I.    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat conftest.c  -L. -L/usr/local/lib -Wl,-R/usr/local/lib -L. -fstack-protector -rdynamic -Wl,-export-dynamic     -Wl,-R/usr/local/lib -L/usr/local/lib -lruby-static  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main() { return 0; }
+/* end */
+
+./conftest
+"gcc -I/usr/local/include/ruby-2.4.0/x86_64-linux -I/usr/local/include/ruby-2.4.0/ruby/backward -I/usr/local/include/ruby-2.4.0 -I.    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat   -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: #ifndef __GNUC__
+5: # error
+6: |:/ === __GNUC__ undefined === /:|
+7: #endif
+/* end */
+
+"gcc -o conftest -I/usr/local/include/ruby-2.4.0/x86_64-linux -I/usr/local/include/ruby-2.4.0/ruby/backward -I/usr/local/include/ruby-2.4.0 -I.    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat conftest.c  -L. -L/usr/local/lib -Wl,-R/usr/local/lib -L. -fstack-protector -rdynamic -Wl,-export-dynamic     -Wl,-R/usr/local/lib -L/usr/local/lib -lruby-static  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main() { return sizeof(long) == 8 ? 0 : 1; }
+/* end */
+
+./conftest
+have_header: checking for sys/types.h... -------------------- yes
+
+"gcc -E -I/usr/local/include/ruby-2.4.0/x86_64-linux -I/usr/local/include/ruby-2.4.0/ruby/backward -I/usr/local/include/ruby-2.4.0 -I.    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <sys/types.h>
+/* end */
+
+--------------------
+
+
+SQL*Plus: Release 11.2.0.4.0 Production on Sun Jul 30 23:54:08 2017
+have_header: checking for oci.h... -------------------- yes
+
+"gcc -E -I/usr/local/include/ruby-2.4.0/x86_64-linux -I/usr/local/include/ruby-2.4.0/ruby/backward -I/usr/local/include/ruby-2.4.0 -I.    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat -I/opt/db/oracle/11.2.0/rdbms/public  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <oci.h>
+/* end */
+
+--------------------
+
+have_func: checking for OCIEnvCreate() in oci.h... -------------------- yes
+
+"gcc -o conftest -I/usr/local/include/ruby-2.4.0/x86_64-linux -I/usr/local/include/ruby-2.4.0/ruby/backward -I/usr/local/include/ruby-2.4.0 -I.    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat -I/opt/db/oracle/11.2.0/rdbms/public conftest.c  -L. -L/usr/local/lib -Wl,-R/usr/local/lib -L. -fstack-protector -rdynamic -Wl,-export-dynamic     -L/usr/local/lib  -L/opt/db/oracle/11.2.0/lib -Wl,-rpath,/opt/db/oracle/11.2.0/lib -lclntsh -Wl,-R/usr/local/lib -L/usr/local/lib -lruby-static  -L/usr/local/lib  -L/opt/db/oracle/11.2.0/lib -Wl,-rpath,/opt/db/oracle/11.2.0/lib -lclntsh -lpthread -lrt -ldl -lcrypt -lm   -lc"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <oci.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   if (argc > 1000000) {
+10:     printf("%p", &t);
+11:   }
+12: 
+13:   return 0;
+14: }
+15: int t(void) { void ((*volatile p)()); p = (void ((*)()))OCIEnvCreate; return !p; }
+/* end */
+
+--------------------
+
+checking for OCI_MAJOR_VERSION in oci.h... -------------------- 11
+
+"gcc -I/usr/local/include/ruby-2.4.0/x86_64-linux -I/usr/local/include/ruby-2.4.0/ruby/backward -I/usr/local/include/ruby-2.4.0 -I.    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat -I/opt/db/oracle/11.2.0/rdbms/public   -c conftest.c"
+conftest.c:6: error: size of array ‘conftest_const’ is negative
+cc1: warning: unrecognized command line option "-Wno-self-assign"
+cc1: warning: unrecognized command line option "-Wno-constant-logical-operand"
+cc1: warning: unrecognized command line option "-Wno-parentheses-equality"
+cc1: warning: unrecognized command line option "-Wno-tautological-compare"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <oci.h>
+4: 
+5: /*top*/
+6: int conftest_const[(OCI_MAJOR_VERSION < 0) ? 1 : -1];
+/* end */
+
+"gcc -o conftest -I/usr/local/include/ruby-2.4.0/x86_64-linux -I/usr/local/include/ruby-2.4.0/ruby/backward -I/usr/local/include/ruby-2.4.0 -I.    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat -I/opt/db/oracle/11.2.0/rdbms/public conftest.c  -L. -L/usr/local/lib -Wl,-R/usr/local/lib -L. -fstack-protector -rdynamic -Wl,-export-dynamic     -L/opt/db/oracle/11.2.0/lib -Wl,-rpath,/opt/db/oracle/11.2.0/lib -lclntsh -Wl,-R/usr/local/lib -L/usr/local/lib -lruby-static  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <oci.h>
+ 4: 
+ 5: #include <stdio.h>
+ 6: /*top*/
+ 7: typedef unsigned
+ 8: #ifdef PRI_LL_PREFIX
+ 9: #define PRI_CONFTEST_PREFIX PRI_LL_PREFIX
+10: LONG_LONG
+11: #else
+12: #define PRI_CONFTEST_PREFIX "l"
+13: long
+14: #endif
+15: conftest_type;
+16: conftest_type conftest_const = (conftest_type)(OCI_MAJOR_VERSION);
+17: int main() {printf("%"PRI_CONFTEST_PREFIX"u\n", conftest_const); return 0;}
+/* end */
+
+./conftest |
+--------------------
+
+checking for OCI_MINOR_VERSION in oci.h... -------------------- 2
+
+"gcc -I/usr/local/include/ruby-2.4.0/x86_64-linux -I/usr/local/include/ruby-2.4.0/ruby/backward -I/usr/local/include/ruby-2.4.0 -I.    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat -I/opt/db/oracle/11.2.0/rdbms/public   -c conftest.c"
+conftest.c:6: error: size of array ‘conftest_const’ is negative
+cc1: warning: unrecognized command line option "-Wno-self-assign"
+cc1: warning: unrecognized command line option "-Wno-constant-logical-operand"
+cc1: warning: unrecognized command line option "-Wno-parentheses-equality"
+cc1: warning: unrecognized command line option "-Wno-tautological-compare"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <oci.h>
+4: 
+5: /*top*/
+6: int conftest_const[(OCI_MINOR_VERSION < 0) ? 1 : -1];
+/* end */
+
+"gcc -o conftest -I/usr/local/include/ruby-2.4.0/x86_64-linux -I/usr/local/include/ruby-2.4.0/ruby/backward -I/usr/local/include/ruby-2.4.0 -I.    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat -I/opt/db/oracle/11.2.0/rdbms/public conftest.c  -L. -L/usr/local/lib -Wl,-R/usr/local/lib -L. -fstack-protector -rdynamic -Wl,-export-dynamic     -L/opt/db/oracle/11.2.0/lib -Wl,-rpath,/opt/db/oracle/11.2.0/lib -lclntsh -Wl,-R/usr/local/lib -L/usr/local/lib -lruby-static  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <oci.h>
+ 4: 
+ 5: #include <stdio.h>
+ 6: /*top*/
+ 7: typedef unsigned
+ 8: #ifdef PRI_LL_PREFIX
+ 9: #define PRI_CONFTEST_PREFIX PRI_LL_PREFIX
+10: LONG_LONG
+11: #else
+12: #define PRI_CONFTEST_PREFIX "l"
+13: long
+14: #endif
+15: conftest_type;
+16: conftest_type conftest_const = (conftest_type)(OCI_MINOR_VERSION);
+17: int main() {printf("%"PRI_CONFTEST_PREFIX"u\n", conftest_const); return 0;}
+/* end */
+
+./conftest |
+--------------------
+
+have_func: checking for localtime_r()... -------------------- yes
+
+"gcc -o conftest -I/usr/local/include/ruby-2.4.0/x86_64-linux -I/usr/local/include/ruby-2.4.0/ruby/backward -I/usr/local/include/ruby-2.4.0 -I.    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat -I/opt/db/oracle/11.2.0/rdbms/public -Wall conftest.c  -L. -L/usr/local/lib -Wl,-R/usr/local/lib -L. -fstack-protector -rdynamic -Wl,-export-dynamic     -L/opt/db/oracle/11.2.0/lib -Wl,-rpath,/opt/db/oracle/11.2.0/lib -lclntsh -Wl,-R/usr/local/lib -L/usr/local/lib -lruby-static  -L/opt/db/oracle/11.2.0/lib -Wl,-rpath,/opt/db/oracle/11.2.0/lib -lclntsh -lpthread -lrt -ldl -lcrypt -lm   -lc"
+conftest.c: In function ‘t’:
+conftest.c:13: error: ‘localtime_r’ undeclared (first use in this function)
+conftest.c:13: error: (Each undeclared identifier is reported only once
+conftest.c:13: error: for each function it appears in.)
+At top level:
+cc1: warning: unrecognized command line option "-Wno-self-assign"
+cc1: warning: unrecognized command line option "-Wno-constant-logical-operand"
+cc1: warning: unrecognized command line option "-Wno-parentheses-equality"
+cc1: warning: unrecognized command line option "-Wno-tautological-compare"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     printf("%p", &t);
+ 9:   }
+10: 
+11:   return 0;
+12: }
+13: int t(void) { void ((*volatile p)()); p = (void ((*)()))localtime_r; return !p; }
+/* end */
+
+"gcc -o conftest -I/usr/local/include/ruby-2.4.0/x86_64-linux -I/usr/local/include/ruby-2.4.0/ruby/backward -I/usr/local/include/ruby-2.4.0 -I.    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat -I/opt/db/oracle/11.2.0/rdbms/public -Wall conftest.c  -L. -L/usr/local/lib -Wl,-R/usr/local/lib -L. -fstack-protector -rdynamic -Wl,-export-dynamic     -L/opt/db/oracle/11.2.0/lib -Wl,-rpath,/opt/db/oracle/11.2.0/lib -lclntsh -Wl,-R/usr/local/lib -L/usr/local/lib -lruby-static  -L/opt/db/oracle/11.2.0/lib -Wl,-rpath,/opt/db/oracle/11.2.0/lib -lclntsh -lpthread -lrt -ldl -lcrypt -lm   -lc"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     printf("%p", &t);
+ 9:   }
+10: 
+11:   return 0;
+12: }
+13: extern void localtime_r();
+14: int t(void) { localtime_r(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for dladdr()... -------------------- yes
+
+"gcc -o conftest -I/usr/local/include/ruby-2.4.0/x86_64-linux -I/usr/local/include/ruby-2.4.0/ruby/backward -I/usr/local/include/ruby-2.4.0 -I.    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat -I/opt/db/oracle/11.2.0/rdbms/public -Wall conftest.c  -L. -L/usr/local/lib -Wl,-R/usr/local/lib -L. -fstack-protector -rdynamic -Wl,-export-dynamic     -L/opt/db/oracle/11.2.0/lib -Wl,-rpath,/opt/db/oracle/11.2.0/lib -lclntsh -Wl,-R/usr/local/lib -L/usr/local/lib -lruby-static  -L/opt/db/oracle/11.2.0/lib -Wl,-rpath,/opt/db/oracle/11.2.0/lib -lclntsh -lpthread -lrt -ldl -lcrypt -lm   -lc"
+conftest.c: In function ‘t’:
+conftest.c:13: error: ‘dladdr’ undeclared (first use in this function)
+conftest.c:13: error: (Each undeclared identifier is reported only once
+conftest.c:13: error: for each function it appears in.)
+At top level:
+cc1: warning: unrecognized command line option "-Wno-self-assign"
+cc1: warning: unrecognized command line option "-Wno-constant-logical-operand"
+cc1: warning: unrecognized command line option "-Wno-parentheses-equality"
+cc1: warning: unrecognized command line option "-Wno-tautological-compare"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     printf("%p", &t);
+ 9:   }
+10: 
+11:   return 0;
+12: }
+13: int t(void) { void ((*volatile p)()); p = (void ((*)()))dladdr; return !p; }
+/* end */
+
+"gcc -o conftest -I/usr/local/include/ruby-2.4.0/x86_64-linux -I/usr/local/include/ruby-2.4.0/ruby/backward -I/usr/local/include/ruby-2.4.0 -I.    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat -I/opt/db/oracle/11.2.0/rdbms/public -Wall conftest.c  -L. -L/usr/local/lib -Wl,-R/usr/local/lib -L. -fstack-protector -rdynamic -Wl,-export-dynamic     -L/opt/db/oracle/11.2.0/lib -Wl,-rpath,/opt/db/oracle/11.2.0/lib -lclntsh -Wl,-R/usr/local/lib -L/usr/local/lib -lruby-static  -L/opt/db/oracle/11.2.0/lib -Wl,-rpath,/opt/db/oracle/11.2.0/lib -lclntsh -lpthread -lrt -ldl -lcrypt -lm   -lc"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     printf("%p", &t);
+ 9:   }
+10: 
+11:   return 0;
+12: }
+13: extern void dladdr();
+14: int t(void) { dladdr(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for dlmodinfo()... -------------------- no
+
+"gcc -o conftest -I/usr/local/include/ruby-2.4.0/x86_64-linux -I/usr/local/include/ruby-2.4.0/ruby/backward -I/usr/local/include/ruby-2.4.0 -I.    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat -I/opt/db/oracle/11.2.0/rdbms/public -Wall conftest.c  -L. -L/usr/local/lib -Wl,-R/usr/local/lib -L. -fstack-protector -rdynamic -Wl,-export-dynamic     -L/opt/db/oracle/11.2.0/lib -Wl,-rpath,/opt/db/oracle/11.2.0/lib -lclntsh -Wl,-R/usr/local/lib -L/usr/local/lib -lruby-static  -L/opt/db/oracle/11.2.0/lib -Wl,-rpath,/opt/db/oracle/11.2.0/lib -lclntsh -lpthread -lrt -ldl -lcrypt -lm   -lc"
+conftest.c: In function ‘t’:
+conftest.c:13: error: ‘dlmodinfo’ undeclared (first use in this function)
+conftest.c:13: error: (Each undeclared identifier is reported only once
+conftest.c:13: error: for each function it appears in.)
+At top level:
+cc1: warning: unrecognized command line option "-Wno-self-assign"
+cc1: warning: unrecognized command line option "-Wno-constant-logical-operand"
+cc1: warning: unrecognized command line option "-Wno-parentheses-equality"
+cc1: warning: unrecognized command line option "-Wno-tautological-compare"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     printf("%p", &t);
+ 9:   }
+10: 
+11:   return 0;
+12: }
+13: int t(void) { void ((*volatile p)()); p = (void ((*)()))dlmodinfo; return !p; }
+/* end */
+
+"gcc -o conftest -I/usr/local/include/ruby-2.4.0/x86_64-linux -I/usr/local/include/ruby-2.4.0/ruby/backward -I/usr/local/include/ruby-2.4.0 -I.    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat -I/opt/db/oracle/11.2.0/rdbms/public -Wall conftest.c  -L. -L/usr/local/lib -Wl,-R/usr/local/lib -L. -fstack-protector -rdynamic -Wl,-export-dynamic     -L/opt/db/oracle/11.2.0/lib -Wl,-rpath,/opt/db/oracle/11.2.0/lib -lclntsh -Wl,-R/usr/local/lib -L/usr/local/lib -lruby-static  -L/opt/db/oracle/11.2.0/lib -Wl,-rpath,/opt/db/oracle/11.2.0/lib -lclntsh -lpthread -lrt -ldl -lcrypt -lm   -lc"
+/tmp/ccY4aFnQ.o: In function `t':
+/home/snvenkata/rails_app/app/vendor/bundle/gems/ruby-oci8-2.2.4.1/ext/oci8/conftest.c:14: undefined reference to `dlmodinfo'
+collect2: ld returned 1 exit status
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     printf("%p", &t);
+ 9:   }
+10: 
+11:   return 0;
+12: }
+13: extern void dlmodinfo();
+14: int t(void) { dlmodinfo(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for dlgetname()... -------------------- no
+
+"gcc -o conftest -I/usr/local/include/ruby-2.4.0/x86_64-linux -I/usr/local/include/ruby-2.4.0/ruby/backward -I/usr/local/include/ruby-2.4.0 -I.    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat -I/opt/db/oracle/11.2.0/rdbms/public -Wall conftest.c  -L. -L/usr/local/lib -Wl,-R/usr/local/lib -L. -fstack-protector -rdynamic -Wl,-export-dynamic     -L/opt/db/oracle/11.2.0/lib -Wl,-rpath,/opt/db/oracle/11.2.0/lib -lclntsh -Wl,-R/usr/local/lib -L/usr/local/lib -lruby-static  -L/opt/db/oracle/11.2.0/lib -Wl,-rpath,/opt/db/oracle/11.2.0/lib -lclntsh -lpthread -lrt -ldl -lcrypt -lm   -lc"
+conftest.c: In function ‘t’:
+conftest.c:13: error: ‘dlgetname’ undeclared (first use in this function)
+conftest.c:13: error: (Each undeclared identifier is reported only once
+conftest.c:13: error: for each function it appears in.)
+At top level:
+cc1: warning: unrecognized command line option "-Wno-self-assign"
+cc1: warning: unrecognized command line option "-Wno-constant-logical-operand"
+cc1: warning: unrecognized command line option "-Wno-parentheses-equality"
+cc1: warning: unrecognized command line option "-Wno-tautological-compare"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     printf("%p", &t);
+ 9:   }
+10: 
+11:   return 0;
+12: }
+13: int t(void) { void ((*volatile p)()); p = (void ((*)()))dlgetname; return !p; }
+/* end */
+
+"gcc -o conftest -I/usr/local/include/ruby-2.4.0/x86_64-linux -I/usr/local/include/ruby-2.4.0/ruby/backward -I/usr/local/include/ruby-2.4.0 -I.    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat -I/opt/db/oracle/11.2.0/rdbms/public -Wall conftest.c  -L. -L/usr/local/lib -Wl,-R/usr/local/lib -L. -fstack-protector -rdynamic -Wl,-export-dynamic     -L/opt/db/oracle/11.2.0/lib -Wl,-rpath,/opt/db/oracle/11.2.0/lib -lclntsh -Wl,-R/usr/local/lib -L/usr/local/lib -lruby-static  -L/opt/db/oracle/11.2.0/lib -Wl,-rpath,/opt/db/oracle/11.2.0/lib -lclntsh -lpthread -lrt -ldl -lcrypt -lm   -lc"
+/tmp/ccQyB9zZ.o: In function `t':
+/home/snvenkata/rails_app/app/vendor/bundle/gems/ruby-oci8-2.2.4.1/ext/oci8/conftest.c:14: undefined reference to `dlgetname'
+collect2: ld returned 1 exit status
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     printf("%p", &t);
+ 9:   }
+10: 
+11:   return 0;
+12: }
+13: extern void dlgetname();
+14: int t(void) { dlgetname(); return 0; }
+/* end */
+
+--------------------
+
+have_header: checking for ruby/thread.h... -------------------- yes
+
+"gcc -E -I/usr/local/include/ruby-2.4.0/x86_64-linux -I/usr/local/include/ruby-2.4.0/ruby/backward -I/usr/local/include/ruby-2.4.0 -I.    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat -I/opt/db/oracle/11.2.0/rdbms/public -Wall  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ruby/thread.h>
+/* end */
+
+--------------------
+
+have_func: checking for rb_class_superclass() in ruby.h... -------------------- yes
+
+"gcc -o conftest -I/usr/local/include/ruby-2.4.0/x86_64-linux -I/usr/local/include/ruby-2.4.0/ruby/backward -I/usr/local/include/ruby-2.4.0 -I.    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat -I/opt/db/oracle/11.2.0/rdbms/public -Wall conftest.c  -L. -L/usr/local/lib -Wl,-R/usr/local/lib -L. -fstack-protector -rdynamic -Wl,-export-dynamic     -L/opt/db/oracle/11.2.0/lib -Wl,-rpath,/opt/db/oracle/11.2.0/lib -lclntsh -Wl,-R/usr/local/lib -L/usr/local/lib -lruby-static  -L/opt/db/oracle/11.2.0/lib -Wl,-rpath,/opt/db/oracle/11.2.0/lib -lclntsh -lpthread -lrt -ldl -lcrypt -lm   -lc"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <ruby.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   if (argc > 1000000) {
+10:     printf("%p", &t);
+11:   }
+12: 
+13:   return 0;
+14: }
+15: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_class_superclass; return !p; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_thread_call_without_gvl() in ruby/thread.h... -------------------- yes
+
+"gcc -o conftest -I/usr/local/include/ruby-2.4.0/x86_64-linux -I/usr/local/include/ruby-2.4.0/ruby/backward -I/usr/local/include/ruby-2.4.0 -I.    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat -I/opt/db/oracle/11.2.0/rdbms/public -Wall conftest.c  -L. -L/usr/local/lib -Wl,-R/usr/local/lib -L. -fstack-protector -rdynamic -Wl,-export-dynamic     -L/opt/db/oracle/11.2.0/lib -Wl,-rpath,/opt/db/oracle/11.2.0/lib -lclntsh -Wl,-R/usr/local/lib -L/usr/local/lib -lruby-static  -L/opt/db/oracle/11.2.0/lib -Wl,-rpath,/opt/db/oracle/11.2.0/lib -lclntsh -lpthread -lrt -ldl -lcrypt -lm   -lc"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <ruby/thread.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   if (argc > 1000000) {
+10:     printf("%p", &t);
+11:   }
+12: 
+13:   return 0;
+14: }
+15: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_thread_call_without_gvl; return !p; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_sym2str() in ruby.h... -------------------- yes
+
+"gcc -o conftest -I/usr/local/include/ruby-2.4.0/x86_64-linux -I/usr/local/include/ruby-2.4.0/ruby/backward -I/usr/local/include/ruby-2.4.0 -I.    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat -I/opt/db/oracle/11.2.0/rdbms/public -Wall conftest.c  -L. -L/usr/local/lib -Wl,-R/usr/local/lib -L. -fstack-protector -rdynamic -Wl,-export-dynamic     -L/opt/db/oracle/11.2.0/lib -Wl,-rpath,/opt/db/oracle/11.2.0/lib -lclntsh -Wl,-R/usr/local/lib -L/usr/local/lib -lruby-static  -L/opt/db/oracle/11.2.0/lib -Wl,-rpath,/opt/db/oracle/11.2.0/lib -lclntsh -lpthread -lrt -ldl -lcrypt -lm   -lc"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <ruby.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   if (argc > 1000000) {
+10:     printf("%p", &t);
+11:   }
+12: 
+13:   return 0;
+14: }
+15: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_sym2str; return !p; }
+/* end */
+
+--------------------
+
+"gcc -I/usr/local/include/ruby-2.4.0/x86_64-linux -I/usr/local/include/ruby-2.4.0/ruby/backward -I/usr/local/include/ruby-2.4.0 -I.    -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration -Wdeprecated-declarations -Wno-packed-bitfield-compat -I/opt/db/oracle/11.2.0/rdbms/public -Wall   -c ./plthook_elf.c"
+./plthook_elf.c: In function ‘plthook_open_real’:
+./plthook_elf.c:344: warning: comparison between signed and unsigned integer expressions
+./plthook_elf.c:363: warning: comparison between signed and unsigned integer expressions
+At top level:
+cc1: warning: unrecognized command line option "-Wno-self-assign"
+cc1: warning: unrecognized command line option "-Wno-constant-logical-operand"
+cc1: warning: unrecognized command line option "-Wno-parentheses-equality"
+cc1: warning: unrecognized command line option "-Wno-tautological-compare"
+extconf.h is:
+/* begin */
+ 1: #ifndef EXTCONF_H
+ 2: #define EXTCONF_H
+ 3: #define HAVE_SYS_TYPES_H 1
+ 4: #define HAVE_OCI_H 1
+ 5: #define HAVE_OCIENVCREATE 1
+ 6: #define ORACLE_CLIENT_VERSION 0x0b200000
+ 7: #define HAVE_LOCALTIME_R 1
+ 8: #define HAVE_DLADDR 1
+ 9: #define HAVE_RUBY_THREAD_H 1
+10: #define HAVE_RB_CLASS_SUPERCLASS 1
+11: #define HAVE_RB_THREAD_CALL_WITHOUT_GVL 1
+12: #define HAVE_RB_SYM2STR 1
+13: #define HAVE_PLTHOOK 1
+14: #define Init_oci8lib Init_oci8lib_240
+15: #define oci8lib oci8lib_240
+16: #define OCI8LIB_VERSION "2.2.4.1"
+17: #endif
+/* end */
+
